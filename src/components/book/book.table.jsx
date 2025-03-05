@@ -27,7 +27,7 @@ const BookTable = () => {
 
 
 
-    const loadBook = useCallBack(async () => {
+    const loadBook = useCallback(async () => {
         setLoadingTable(true);
         const res = await fetchAllBookAPI(current, pageSize);
         if (res.data) {
